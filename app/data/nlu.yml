@@ -1,0 +1,203 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hola
+    - buen dia
+    - buenos dias
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - adios
+    - hasta luego
+    - chau
+    - gracias , adios
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - si
+    - afirmativo
+    - correcto
+    - por supuesto
+    - exacto
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - negativo
+    - incorrecto
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - estoy bien
+    - estoy excelente
+    - excelente
+    - estoy perfecto
+    - maravilloso
+    - estoy maravillo
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - un poco triste
+    - triste
+    - no muy bien
+    - no en las mejores condiciones
+    - me siento mal
+    - estoy angustiado
+    - estoy depresivo
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - sos un bot?
+    - sos un humano?
+    - quien sos?
+    - como te llamas?
+    - estoy hablando a un bot?
+    - estoy hablando a una persona=
+    - con quien estoy hablando?
+
+- intent: remoto_presencial
+  examples: |
+    - remoto
+    - presencial
+    - escritorio
+    - conectarse
+    - soporte remoto
+    - soporte presencial
+    - aca
+    - en persona
+    - conectandose
+
+- intent: soporte_tecnico
+  examples: |
+    - necesito ayuda
+    - tengo un problema
+    - necesito pedir soporte tecnico
+    - quiero hacer una consulta
+    - podrias ayudarme
+    - tengo una duda
+    - necesito una mano
+    - queria solicitar ayuda
+
+- intent: bmc_soporte
+  examples: |
+    - necesito ayuda con el bmc
+    - tengo un problema con el bmc
+    - quiero que me ayudes con el bmc
+    - me podrias dar una mano con el bmc
+    - tengo un error en el bmc
+    - quiero un manual del bmc
+    - podria consultarte algo sobre el bmc
+    - hay algo que no entiendo del bmc
+- intent: sigdoc_soporte
+  examples: |
+    - necesito ayuda con el sigdoc
+    - tengo un problema con el sigdoc
+    - quiero que me ayudes con el sigdoc
+    - me podrias dar una mano con el sigdoc
+    - tengo un error en el sigdoc
+    - quiero un manual del sigdoc
+    - podria consultarte algo sobre el sigdoc
+    - hay algo que no entiendo del sigdoc
+- intent: sigpre_soporte
+  examples: |
+    - necesito ayuda con el sigpre
+    - tengo un problema con el sigpre
+    - quiero que me ayudes con el sigpre
+    - me podrias dar una mano con el sigpre
+    - tengo un error en el sigpre
+    - quiero un manual del sigpre
+    - podria consultarte algo sobre el sigpre
+    - hay algo que no entiendo del sigpre
+
+- intent: sap_soporte
+  examples: |
+    - necesito ayuda con sap
+    - necesito ayuda en sap
+    - tengo un problema con sap
+    - tengo un problema en sap
+    - quiero que me ayudes con sapa
+    - me podrias dar una mano con sap
+    - tengo un error en sap
+    - quiero un manual sap
+    - podria consultarte algo sobre el sap
+    - hay algo que no entiendo de sap
+
+
+- intent: ask_question
+  examples: |
+    - ¿Cómo cambio mi contraseña de usuario de sesion?
+    - ¿Cómo cambio mi contraseña de usuario de windows?
+    - ¿Cómo cambio mi contraseña de usuario de correo?
+    - ¿Cómo desbloqueo mi usuario?
+    - Se bloqueo mi usuario , que debo hacer?
+    - ¿Qué debo hacer si mi internet está lento?
+    - ¿Cómo configuro mi correo electrónico?
+    - ¿Qué significa el error 404?
+    - como instalo una nueva aplicacion en el celular ?
+    - no me deja instalar una aplicacion en el celular
+    - no me deja instalar una aplicacion en el telefono
+    - no puedo conectarme a SAP
+    - cuales son los datos de conexion a sap
+

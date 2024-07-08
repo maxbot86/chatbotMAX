@@ -1,0 +1,50 @@
+version: '3.1'
+intents:
+- affirm
+- bmc_soporte
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- sigdoc_soporte
+- sigpre_soporte
+- ask_question
+- soporte_tecnico
+- remoto_presencial
+- sap_soporte
+
+actions:
+- action_hello_world
+- action_goodbye
+- action_decide_soporte
+- action_answer_faq
+
+responses:
+  utter_greet:
+  - text: Hey! como estas?
+  utter_cheer_up:
+  - text: 'Espero que todo mejore, aqui hay algo para animarte:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: eso te sirvio de ayuda?
+  utter_happy:
+  - text: Genial, sigue asi!
+  utter_goodbye:
+  - text: Hasta luego
+  utter_iamabot:
+  - text: Soy un BOT, y mi proposito es ayudarte.
+  utter_sap_soporte:
+  - text: "Estas necesitando ayuda con SAP? A guarde un segundo que alguien se pondra en contacto con ud."
+  utter_soporte_tecnico:
+  - text: "Veo que necesita ayuda, por favor indique si es presencial o remoto?"
+  utter_bmc_soporte:
+  - text: "Entiendo que tiene alguna con el BMC, puedes descargar del siguiente link el manual de usuario. Si es un error, te recomiendo que envies un mail a 'soporteti@energia-argentina.com.ar' y seras contactado a la brevedad. /n LINK: LINK TO MANUAL"
+  utter_sigdoc_soporte:
+  - text: Necesitas ayuda con el SIGDOC, actualmente no tengo mucha ayuda para brindarte. Te recomiendo que envies un mail con tu pedido a SoporteTI y alguien se contactara a la brevedad.
+  utter_sigpre_soporte:
+  - text: "Necesitas ayuda con el SIGPRE, puedo compartirte el link del manual de SIGPRE para que descargues. Si es un error, te recomiendo que envies un mail a 'soporteti@energia-argentina.com.ar' y seras contactado a la brevedad. /n LINK: LINK TO MANUAL"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

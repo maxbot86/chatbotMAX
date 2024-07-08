@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: greet path
+  steps:
+  - intent: greet
+  - action: action_hello_world
+
+
+- story: goodbye path
+  steps:
+  - intent: goodbye
+  - action: action_goodbye
+
+
+- story: sap path
+  steps:
+  - intent: sap_soporte
+  - action: utter_sap_soporte
+
+- story: soporte bmc
+  steps:
+  - intent: greet
+  - action: action_hello_world
+  - intent: bmc_soporte
+  - action: utter_bmc_soporte
+  - intent: goodbye
+  - action: action_goodbye
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: action_hello_world
+  - intent: sigdoc_soporte
+  - action: utter_sigdoc_soporte
+  - intent: goodbye
+  - action: action_goodbye
+
+- story: interactive_soporte_tecnico
+  steps:
+  - intent: greet
+  - action: action_hello_world
+  - intent: soporte_tecnico
+  - action: utter_soporte_tecnico
+  - intent: remoto_presencial
+  - action: action_decide_soporte
+  - intent: ask_question
+  - action: action_answer_faq
+
+- story: soporte Tec
+  steps:
+    - intent: remoto_presencial
+    - action: action_decide_soporte
+
+- story: User asks a question
+  steps:
+  - intent: ask_question
+  - action: action_answer_faq
